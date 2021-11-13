@@ -8,9 +8,7 @@ import os
 # create the environment
 def create_single_football_env(args):
     """Creates gfootball environment."""
-    env = football_env.create_environment(\
-            env_name=args.env_name, stacked=True, with_checkpoints=False, 
-            )
+    env = football_env.create_environment(env_name=args.env_name, stacked=True)
     return env
 
 if __name__ == '__main__': 
